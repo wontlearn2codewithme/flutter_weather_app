@@ -4,11 +4,11 @@ part 'weather.g.dart';
 
 @JsonSerializable()
 class Weather {
-  final double tempearture;
-  @JsonKey(name: 'weatherCode')
+  final double temperature;
+  @JsonKey(name: 'weathercode')
   final double weatherCode;
 
-  const Weather({required this.tempearture, required this.weatherCode});
+  const Weather({required this.temperature, required this.weatherCode});
 
   factory Weather.fromJson(Map<String, dynamic> json) =>
       _$WeatherFromJson(json);
